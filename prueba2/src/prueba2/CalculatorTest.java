@@ -18,7 +18,21 @@ public class CalculatorTest {
   @Test
   public void evaluatesFactorial() {
     Calculator calculator = new Calculator();
-    int result = calculator.factorial(10);
-    assertEquals(5, result);
+    int result = calculator.factorial(5);
+    assertEquals(120, result);
+  }
+  
+  @Test
+  public void evaluatesPrimo() {
+    Calculator calculator = new Calculator();
+    boolean result = calculator.primo(2);
+    assertEquals(true, result);
+  }
+  
+  @Test
+  public void evaluatesPerfecto() {
+    Calculator calculator = new Calculator();
+    boolean result = calculator.perfecto(6);
+    assertEquals(true, result);
   }
 }
