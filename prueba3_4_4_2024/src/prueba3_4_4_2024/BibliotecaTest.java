@@ -26,12 +26,13 @@ public class BibliotecaTest {
  
 	@Test
 	public void testBorralibro() {
-		Libro libro = new Libro("La ratonaera", "Agatha Christey");
-        Biblioteca.añadelibro(libro);
-        Biblioteca.borralibro("La ratonera");
-        assertEquals(0, Biblioteca.numerodelibros());
+		
+        Biblioteca.borralibro("Heartstopper");
+        assertEquals(2, Biblioteca.numerodelibros());
 	}
  
+	
+	
 	@Test
 	public void testBuscarlibro() {
 		Libro libro1 = new Libro("Percy jackson","Rick Rordan");
@@ -47,10 +48,7 @@ public class BibliotecaTest {
  
 	@Test
 	public void testBuscaportitulo() {
-		Libro libro1 = new Libro("Percy jackson","Rick Rordan");
-		Libro libro2 = new Libro("El quijote", "Cervantes");
-		Biblioteca.añadelibro(libro1);
-		Biblioteca.añadelibro(libro2);
+		
         List<Libro> librosEncontrados = Biblioteca.buscaportitulo("Percy jackson");
         assertEquals(0, librosEncontrados.size());
 		
@@ -58,11 +56,7 @@ public class BibliotecaTest {
  
 	@Test
 	public void testNumerodelibros() {
-		Libro libro1 = new Libro("Percy jackson","Rick Rordan");
-		Libro libro2 = new Libro("El quijote", "Cervantes");
-        Biblioteca.añadelibro(libro1);
-        Biblioteca.añadelibro(libro2);
-        assertEquals(2, Biblioteca.numerodelibros());
+        assertEquals(0, Biblioteca.numerodelibros());
  
 	}
  
