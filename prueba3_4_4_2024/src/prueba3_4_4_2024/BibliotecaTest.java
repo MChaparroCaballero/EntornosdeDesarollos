@@ -14,8 +14,6 @@ public class BibliotecaTest {
     }
  
 	
-	
-	
 	@Test
 	public void testAñadelibro() {
 		Libro libro = new Libro("HeartStopper", "Alice Copper");

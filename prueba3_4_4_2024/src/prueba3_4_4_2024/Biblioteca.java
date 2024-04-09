@@ -86,8 +86,8 @@ class Libro {
 		this.base = base;
 	}
 	
-	public void añadelibro(Libro libro) {
-		
+	public void añadelibro(String titulo, String autor, String Isbn ) {
+		Libro libro= new Libro(titulo,autor,Isbn);
 		base.add("Titulo: " + libro.getTitulo() + " Autor: " + libro.getAutor() + " ISBN: " + libro.getISBN() + i);
 		
 		nlibro=nlibro+1;
